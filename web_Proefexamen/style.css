@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+
+
+
+
+
+.container{
+	width: 90%;
+	margin:0px auto 50px auto;
+	display: grid;
+	grid-template-columns: repeat(6,1fr);/*6 kolommen maken - 6,1 fractie*/
+	grid-template-rows: 100px 200px auto auto;
+	grid-gap: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	grid-template-areas:
+		"nav nav nav nav cta cta"
+		"header header header header header header"
+		"events events main main main main"
+		"program program profile profile friends friends"
+		;
+}
+h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 6.25rem;
+	color: white;
+	margin-top: 35px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.25rem;
+	color: #FF4E50;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-top: 35px;
+	padding-left: 0.625rem;
+	border-left: 1px solid #FC913A;
+	text-transform: uppercase;
+	text-align: center;
+}
+h3 {
+	font-size: 1.125rem;
+	color: #FFBC00;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	margin-top: 35px;
+	text-transform: uppercase;
+}
+p {
+	font-size: 1rem;
+	color: #2D2D2D;
+	margin-top: 10px;
+	line-height: 1.5rem;
+}
+
+button {
+	font-size: 1.25rem;
+	letter-spacing: 0.2rem;
+	border: 1px solid #FC913A;
+	text-transform: uppercase;
+	background-color: transparent;
+}
+
+button a {
+	color: #FF4E50;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	margin-top: 35px;
+}
+
+
+nav{
+	grid-area: nav;
+	align-self: center;
+}
+nav li {
+	display: inline-block;
+}
+nav li a {
+	font-size: 1.25rem;
+	color: #FF4E50;
+	letter-spacing: 0.2rem;
+	margin-left: 0.625rem;
+	text-transform: uppercase;
+}
+nav li a .active {
+	color: white;
+	background-color: #FF4E50;
+	
+}
+
+.cta{
+	grid-area: cta;
+	justify-self: end;
+	align-self: center;
+}
+header{
+	grid-area: header;
+	background-color: #FF4E50;
+	padding: 10px 0px 10px 0.25rem;
+	
+}
+
+header p {
+	font-size: 1.25rem;
+	color: white;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+.events{
+	grid-area: events;
+	
+}
+
+.events p {
+	margin-right: 25%;
+	margin-bottom: 10px;
+	border: 1px solid #FF4E50;
+	text-transform: uppercase;
+}
+main{
+	grid-area: main;
+		margin-bottom: 75px;
+}
+
+main img {
+	max-width: 100%;
+}
+
+main p {
+	
+}
+
+main button, main svg {
+	margin-top: 30px;
+	
+}
+
+main svg {
+	fill: #FF4E50;
+	margin-left: 1.25rem;
+}
+
+.program{grid-area: program;}
+.program h4 {
+	font-size: 1rem;
+	color: #FF4E50;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+.program .time {
+	font-size: 1.25rem;
+	color: #FFBC00;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+
+.program .eventtitle{
+	font-size: 1rem;
+	color: #2D2D2D;
+}
+
+.profile{grid-area: profile;}
+.friends{grid-area: friends;}
+
+.profile, .friends {
+	justify-self: center;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
